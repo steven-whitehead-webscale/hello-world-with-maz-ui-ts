@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <MazPhoneNumberInput />
+    xx
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
@@ -8,10 +10,13 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import HelloWorld from "./components/HelloWorld.vue";
+import { MazPhoneNumberInput } from "maz-ui";
+import "maz-ui/lib/css/index.css"; 
 
 @Component({
   components: {
     HelloWorld,
+    MazPhoneNumberInput,
   },
 })
 export default class App extends Vue {}
